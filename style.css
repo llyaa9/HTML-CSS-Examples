@@ -1,0 +1,303 @@
+/* logo */
+
+.logo img{
+	width:235px;
+	height:49.5px;
+	position:absolute;
+	top: 4%;
+	left: 1%;
+}
+
+/* navigation, middle of the screen */
+
+a{
+	font-family:helvetica;
+	font-weight:bold;
+	font-size:larger;
+	text-decoration:none;
+	color:black;
+	position:absolute;
+	top: 50%;
+	margin: -50px 0px 0px -50px;
+	text-align: center;
+}
+
+.about{
+	left: 30%;
+}
+
+
+.work{
+	left: 50%;
+}
+
+.shop{
+	left: 70%;
+}
+
+/* 
+   Bouncing animations
+   
+   Thank you to this article http://www.cssnewbie.com/pure-css-bouncing-ball/#.WbmjAIpryRv 
+   for help regarding the bouncing object animations
+*/
+
+.box {
+margin:0;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+height:100%;
+overflow:hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.screw{
+	position:absolute;
+	width:115.6px;
+	height:272.8px;
+	
+	/* pic animation */
+
+	-webkit-animation: moveX 3.3s linear 0s infinite alternate, moveY 3.1s linear 0s infinite alternate;
+    -moz-animation: moveX 3.3s linear 0s infinite alternate, moveY 3.1s linear 0s infinite alternate;
+    -o-animation: moveX 3.3s linear 0s infinite alternate, moveY 3.1s linear 0s infinite alternate;
+    animation: moveX 3.3s linear 0s infinite alternate, moveY 3.1s linear 0s infinite alternate;	
+}
+
+.ball{
+	position:absolute;
+	width:103.2px;
+	height:103.2px;
+	
+	/* pic animation */
+
+	-webkit-animation: moveX2 3.3s linear 0s infinite alternate, moveY2 3.1s linear 0s infinite alternate;
+    -moz-animation: moveX2 3.3s linear 0s infinite alternate, moveY2 3.1s linear 0s infinite alternate;
+    -o-animation: moveX2 3.3s linear 0s infinite alternate, moveY2 3.1s linear 0s infinite alternate;
+    animation: moveX2 3.3s linear 0s infinite alternate, moveY2 3.1s linear 0s infinite alternate;	
+}
+
+.green{
+	position:absolute;
+	width:298px;
+	height:141px;
+	
+	/* pic animation */
+
+	-webkit-animation: moveX3 3.3s linear 0s infinite alternate, moveY3 3.1s linear 0s infinite alternate;
+    -moz-animation: moveX3 3.3s linear 0s infinite alternate, moveY3 3.1s linear 0s infinite alternate;
+    -o-animation: moveX3 3.3s linear 0s infinite alternate, moveY3 3.1s linear 0s infinite alternate;
+    animation: moveX3 3.3s linear 0s infinite alternate, moveY3 3.1s linear 0s infinite alternate;	
+}
+
+.blue{
+	position:absolute;
+	width:224px;
+	height:215px;
+	
+	/* pic animation */
+
+	-webkit-animation: moveX4 2.3s linear 0s infinite alternate, moveY4 3.1s linear 0s infinite alternate;
+    -moz-animation: moveX4 2.3s linear 0s infinite alternate, moveY4 3.1s linear 0s infinite alternate;
+    -o-animation: moveX4 2.3s linear 0s infinite alternate, moveY4 3.1s linear 0s infinite alternate;
+    animation: moveX4 2.3s linear 0s infinite alternate, moveY4 3.1s linear 0s infinite alternate;	
+}
+
+.grid{
+	position:absolute;
+	width:142.8px;
+	height:142.8px;
+	
+	/* pic animation */
+
+	-webkit-animation: moveX5 2.3s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;
+    -moz-animation: moveX5 2.3s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;
+    -o-animation: moveX5 2.3s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;
+    animation: moveX5 2.3s linear 0s infinite alternate, moveY5 2.1s linear 0s infinite alternate;	
+}
+
+.pills{
+	position:absolute;
+	width:130.4px;
+	height:119.2px;
+	
+	/* pic animation */
+
+	-webkit-animation: moveX6 3.3s linear 0s infinite alternate, moveY6 2.1s linear 0s infinite alternate;
+    -moz-animation: moveX6 3.3s linear 0s infinite alternate, moveY6 2.1s linear 0s infinite alternate;
+    -o-animation: moveX6 3.3s linear 0s infinite alternate, moveY6 2.1s linear 0s infinite alternate;
+    animation: moveX6 3.3s linear 0s infinite alternate, moveY6 2.1s linear 0s infinite alternate;	
+}
+
+/* 
+	**start of keyframe functions**
+	
+	screen width - width of object for moveX* variations
+	screen width - height of object for moveY* variations
+	
+ */
+ 
+/* screw */
+  @-webkit-keyframes moveX {
+   from { left: calc(100% - 115.6px); } to { left: 0; }
+  }
+  @-moz-keyframes moveX {
+    from { left: calc(100% - 115.6px); } to { left: 0; }
+  }
+  @-o-keyframes moveX {
+    from { left: calc(100% - 115.6px); } to { left: 0; }
+  }
+  @keyframes moveX {
+    from { left: calc(100% - 115.6px); } to { left: 0; }
+  }
+  
+  @-webkit-keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 272.8px); }
+  }
+  @-moz-keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 272.8px); }
+  }
+  @-o-keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 272.8px); }
+  }
+  @keyframes moveY {
+    from { top: 0; } to { top: calc(100% - 272.8px); }
+  }
+
+/* ball */
+  @-webkit-keyframes moveX2 {
+   from { left: 0; } to { left: calc(100% - 103.2px); }
+  }
+  @-moz-keyframes moveX2 {
+    from { left: 0; } to { left: calc(100% - 103.2px); } 
+  }
+  @-o-keyframes moveX2 {
+    from { left: 0; } to { left: calc(100% - 103.2px); } 
+  }
+  @keyframes moveX2 {
+    from { left: 0; } to { left: calc(100% - 103.2px); } 
+  }
+  
+  @-webkit-keyframes moveY2 {
+    from { top: 0; } to { top: calc(100% - 103.2px); }
+  }
+  @-moz-keyframes moveY2 {
+    from { top: 0; } to { top: calc(100% - 103.2px); }
+  }
+  @-o-keyframes moveY2 {
+    from { top: 0; } to { top: calc(100% - 103.2px); }
+  }
+  @keyframes moveY2 {
+    from { top: 0; } to { top: calc(100% - 103.2px); }
+  }
+  
+/* green */
+ @-webkit-keyframes moveX3 {
+   from { left: calc(100% - 298px); } to { left: 0; }
+  }
+  @-moz-keyframes moveX3 {
+    from { left: calc(100% - 298px); } to { left: 0; }
+  }
+  @-o-keyframes moveX3 {
+    from { left: calc(100% - 298px); } to { left: 0; }
+  }
+  @keyframes moveX3 {
+    from { left: calc(100% - 298px); } to { left: 0; }
+  }
+  
+  @-webkit-keyframes moveY3 {
+    from { top: calc(100% - 141px); } to { top: 0; } 
+  }
+  @-moz-keyframes moveY3 {
+    from { top: calc(100% - 141px); } to { top: 0; } 
+  }
+  @-o-keyframes moveY3 {
+    from { top: calc(100% - 141px); } to { top: 0; } 
+  }
+  @keyframes moveY3 {
+    from { top: calc(100% - 141px); } to { top: 0; } 
+  }
+  
+/* blue */
+@-webkit-keyframes moveX4 {
+   from { left: calc(100% -224px); } to { left: 0; }
+  }
+  @-moz-keyframes moveX4 {
+    from { left: calc(100% - 224px); } to { left: 0; }
+  }
+  @-o-keyframes moveX4 {
+    from { left: calc(100% - 224px); } to { left: 0; }
+  }
+  @keyframes moveX4 {
+    from { left: calc(100% - 224px); } to { left: 0; }
+  }
+  
+  @-webkit-keyframes moveY4 {
+    from { top: 0; } to { top: calc(100% - 215px); }
+  }
+  @-moz-keyframes moveY4 {
+    from { top: 0; } to { top: calc(100% - 215px); }
+  }
+  @-o-keyframes moveY4 {
+    from { top: 0; } to { top: calc(100% - 215px); }
+  }
+  @keyframes moveY4 {
+    from { top: 0; } to { top: calc(100% - 215px); }
+  }
+/* grid */
+@-webkit-keyframes moveX5 {
+   from { left: calc(100% - 142.8px); } to { left: 0; }
+  }
+  @-moz-keyframes moveX5 {
+    from { left: calc(100% - 142.8px); } to { left: 0; }
+  }
+  @-o-keyframes moveX5 {
+    from { left: calc(100% - 142.8px); } to { left: 0; }
+  }
+  @keyframes moveX5 {
+    from { left: calc(100% - 142.8px); } to { left: 0; }
+  }
+  
+  @-webkit-keyframes moveY5 {
+    from { top: 0; } to { top: calc(100% - 142.8px); }
+  }
+  @-moz-keyframes moveY5 {
+    from { top: 0; } to { top: calc(100% - 142.8px); }
+  }
+  @-o-keyframes moveY5 {
+    from { top: 0; } to { top: calc(100% - 142.8px); }
+  }
+  @keyframes moveY5 {
+    from { top: 0; } to { top: calc(100% - 142.8px); }
+  }
+/* pills */
+@-webkit-keyframes moveX6 {
+   from { left: calc(100% - 130.4px); } to { left: 0; }
+  }
+  @-moz-keyframes moveX6 {
+    from { left: calc(100% - 130.4px); } to { left: 0; }
+  }
+  @-o-keyframes moveX6 {
+    from { left: calc(100% - 130.4px); } to { left: 0; }
+  }
+  @keyframes moveX6 {
+    from { left: calc(100% - 130.4px); } to { left: 0; }
+  }
+  
+  @-webkit-keyframes moveY6 {
+    from { top: 0; } to { top: calc(100% - 119.2px); }
+  }
+  @-moz-keyframes moveY6 {
+    from { top: 0; } to { top: calc(100% - 119.2px); }
+  }
+  @-o-keyframes moveY6 {
+    from { top: 0; } to { top: calc(100% - 119.2px); }
+  }
+  @keyframes moveY6 {
+    from { top: 0; } to { top: calc(100% - 119.2px); }
+  }
+  
+  
